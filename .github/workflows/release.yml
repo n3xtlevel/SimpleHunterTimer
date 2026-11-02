@@ -1,0 +1,23 @@
+name: Release
+
+# Push a tag like v1.2.1 to build the addon zip and publish a GitHub release.
+# To also upload to CurseForge, add a CF_API_KEY repository secret and an
+# "## X-Curse-Project-ID: <id>" line to the .toc.
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: BigWigsMods/packager@v2

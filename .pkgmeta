@@ -1,5 +1,9 @@
 package-as: SimpleHunterTimer
 
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
 ignore:
   - media
   - .github
