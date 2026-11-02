@@ -1,0 +1,5 @@
+package-as: SimpleHunterTimer
+
+ignore:
+  - media
+  - .github

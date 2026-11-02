@@ -1,0 +1,17 @@
+## Interface: 11508, 11509, 11510
+## Title: Simple Hunter Timer
+## Notes: A simple Auto Shot timer for hunters that shows when it's safe to move and when to stand still.
+## Author: n3xtlevel
+## IconTexture: Interface\AddOns\SimpleHunterTimer\icon
+## Version: 1.2.0
+## SavedVariables: SimpleHunterTimerDB
+## X-License: MIT
+## OptionalDeps: ElvUI, EllesmereUI, SharedMedia
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua
+Media.lua
+Core.lua
+Measure.lua
+Options.lua
